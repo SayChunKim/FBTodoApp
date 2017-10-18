@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1084642618414",
+    "firebase_url": "https://kim-s-todo.firebaseio.com",
+    "project_id": "kim-s-todo",
+    "storage_bucket": "kim-s-todo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084642618414:android:713175203281cb03",
+        "android_client_info": {
+          "package_name": "com.sckim.FBTodoApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084642618414-j42b7mpupd9db0k39qstbhrqsiun82n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkRDntUppXD8oBGKJuuITvrx6dCm-hNt8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

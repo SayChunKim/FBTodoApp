@@ -1,11 +1,12 @@
 package com.sckim.fbtodoapp;
 
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -29,8 +30,8 @@ public class RecyclerViewHolders extends RecyclerView.ViewHolder{
     public RecyclerViewHolders(final View itemView, final List<Task> taskObject) {
         super(itemView);
         this.taskObject = taskObject;
-        categoryTitle = (TextView)itemView.findViewById(R.id.task_title);
-        deleteIcon = (ImageView)itemView.findViewById(R.id.task_delete);
+        categoryTitle = itemView.findViewById(R.id.task_title);
+        deleteIcon = itemView.findViewById(R.id.task_delete);
         deleteIcon.setOnClickListener(new View.OnClickListener(){
         @Override
             public void onClick(View v) {

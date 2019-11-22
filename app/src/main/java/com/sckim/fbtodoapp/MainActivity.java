@@ -1,15 +1,16 @@
 package com.sckim.fbtodoapp;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -35,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         databaseReference = FirebaseDatabase.getInstance().getReference();
         allTask = new ArrayList<Task>();
-        recyclerView = (RecyclerView)findViewById(R.id.task_list);
+        recyclerView = findViewById(R.id.task_list);
         linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
-        addTaskBox = (EditText)findViewById(R.id.add_task_box);
-        Button addTaskButton = (Button)findViewById(R.id.add_task_button);
+        addTaskBox = findViewById(R.id.add_task_box);
+        Button addTaskButton = findViewById(R.id.add_task_button);
         addTaskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
